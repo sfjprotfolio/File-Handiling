@@ -1,0 +1,17 @@
+namespace Exception_Handling
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+
+            string filepath = @"C:\Users\lab2pc12\Desktop\img.jpg";
+            string filepath2 = @"C:\Users\lab2pc12\Documents\img.jpg";
+
+            if (File.Exists(filepath)) {
+              File.Copy(filepath,filepath2 ,true);
+            };
+              }
+    } 
+  
+}
